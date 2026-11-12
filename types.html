@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Types d'OS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="jscript.js" defer></script>
+</head>
+<body>
+<header>
+  <nav aria-label="Navigation principale">
+    <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+    <a href="types.html" data-fr="Types" data-en="Types">Types</a>
+    <a href="installation.html" data-fr="Installation" data-en="Installation">Installation</a>
+  </nav>
+  <div class="controls">
+    <button type="button" onclick="toggleLang()" id="langBtn">EN</button>
+    <label class="switch" aria-label="Activer le mode sombre"><input type="checkbox" onchange="toggleDark()"><span class="slider"></span></label>
+  </div>
+</header>
+<main>
+  <h1 data-fr="Types de Systèmes d'Exploitation" data-en="Types of Operating Systems">Types de Systèmes d'Exploitation</h1>
+  <section>
+    <h3 data-fr="1. OS Monotâche" data-en="1. Single-task OS">1. OS Monotâche</h3>
+    <p data-fr="Ne peut exécuter qu'une seule tâche à la fois. Exemple : MS-DOS." data-en="Can only run one task at a time. Example: MS-DOS.">Ne peut exécuter qu'une seule tâche à la fois. Exemple : MS-DOS.</p>
+    <button class="btn" type="button" onclick="toggleExtra('e1')" data-fr="Lire plus" data-en="Read more">Lire plus</button>
+    <div class="extra" id="e1"><p data-fr="Les OS monotâches étaient courants dans les années 80. MS-DOS est l'exemple le plus connu." data-en="Single-task operating systems were common in the 1980s. MS-DOS is a well-known example.">Les OS monotâches étaient courants dans les années 80. MS-DOS est l'exemple le plus connu.</p></div>
+    <h3 data-fr="2. OS Multitâche" data-en="2. Multi-task OS">2. OS Multitâche</h3>
+    <p data-fr="Peut exécuter plusieurs tâches en même temps. Exemples : Windows, Linux, macOS." data-en="Can run multiple tasks at the same time. Examples: Windows, Linux, macOS.">Peut exécuter plusieurs tâches en même temps. Exemples : Windows, Linux, macOS.</p>
+    <button class="btn" type="button" onclick="toggleExtra('e2')" data-fr="Lire plus" data-en="Read more">Lire plus</button>
+    <div class="extra" id="e2"><p data-fr="Les OS modernes utilisent la gestion du temps processeur pour exécuter plusieurs applications." data-en="Modern operating systems manage CPU time to run multiple applications.">Les OS modernes utilisent la gestion du temps processeur pour exécuter plusieurs applications.</p></div>
+    <h3 data-fr="3. OS Temps Réel" data-en="3. Real-time OS">3. OS Temps Réel</h3>
+    <p data-fr="Utilisé dans les systèmes embarqués. Exemples : VxWorks, FreeRTOS." data-en="Used in embedded systems. Examples: VxWorks, FreeRTOS.">Utilisé dans les systèmes embarqués. Exemples : VxWorks, FreeRTOS.</p>
+    <button class="btn" type="button" onclick="toggleExtra('e3')" data-fr="Lire plus" data-en="Read more">Lire plus</button>
+    <div class="extra" id="e3"><p data-fr="Garantissent un temps de réponse précis. Utilisés dans l'aérospatiale et l'automobile." data-en="They provide predictable response times and are used in aerospace and automotive systems.">Garantissent un temps de réponse précis. Utilisés dans l'aérospatiale et l'automobile.</p></div>
+    <h2 data-fr="4. OS Embarqués" data-en="4. Embedded Operating Systems">4. OS Embarqués</h2>
+    <p data-fr="Un système d'exploitation embarqué est intégré dans un appareil pour contrôler une fonction précise. On le trouve dans les voitures, les appareils ménagers, les machines industrielles et les objets connectés."
+       data-en="An embedded operating system is built into a device to control specific functions. It can be found in cars, home appliances, industrial machines, and connected devices.">Un système d'exploitation embarqué est intégré dans un appareil pour contrôler une fonction précise. On le trouve dans les voitures, les appareils ménagers, les machines industrielles et les objets connectés.</p>
+    <div class="device-box">
+      <strong data-fr="Dans une voiture" data-en="In a car">Dans une voiture</strong>
+      <p data-fr="Des calculateurs électroniques (ECU) contrôlent le moteur, les freins ABS, les airbags et d'autres fonctions. Certains systèmes utilisent AUTOSAR ou un OS temps réel comme QNX ou FreeRTOS, selon l'équipement."
+         data-en="Electronic control units (ECUs) manage the engine, ABS brakes, airbags, and other functions. Depending on the component, they may use AUTOSAR or a real-time OS such as QNX or FreeRTOS.">Des calculateurs électroniques (ECU) contrôlent le moteur, les freins ABS, les airbags et d'autres fonctions. Certains systèmes utilisent AUTOSAR ou un OS temps réel comme QNX ou FreeRTOS, selon l'équipement.</p>
+    </div>
+    <div class="device-box">
+      <strong data-fr="Écran multimédia de la voiture" data-en="Car infotainment screen">Écran multimédia de la voiture</strong>
+      <p data-fr="L'écran tactile, la navigation, la musique et les applications peuvent fonctionner avec Android Automotive ou Linux embarqué."
+         data-en="The touchscreen, navigation, music, and apps may run on Android Automotive or embedded Linux.">L'écran tactile, la navigation, la musique et les applications peuvent fonctionner avec Android Automotive ou Linux embarqué.</p>
+    </div>
+    <div class="device-box">
+      <strong data-fr="Maison et appareils connectés" data-en="Smart home and connected devices">Maison et appareils connectés</strong>
+      <p data-fr="Les téléviseurs, routeurs Wi-Fi, montres connectées et machines à laver utilisent souvent un système embarqué pour gérer leurs fonctions."
+         data-en="TVs, Wi-Fi routers, smartwatches, and washing machines often use embedded software or an embedded OS to manage their functions.">Les téléviseurs, routeurs Wi-Fi, montres connectées et machines à laver utilisent souvent un système embarqué pour gérer leurs fonctions.</p>
+    </div>
+    <div class="device-box">
+      <strong data-fr="Industrie et santé" data-en="Industry and healthcare">Industrie et santé</strong>
+      <p data-fr="Les robots, capteurs, automates industriels et certains appareils médicaux utilisent des systèmes embarqués, parfois avec des contraintes de temps réel."
+         data-en="Robots, sensors, industrial controllers, and some medical devices use embedded systems, sometimes with real-time requirements.">Les robots, capteurs, automates industriels et certains appareils médicaux utilisent des systèmes embarqués, parfois avec des contraintes de temps réel.</p>
+    </div>
+    <p data-fr="À retenir : un OS embarqué est conçu pour un appareil ou une mission précise. Il doit souvent être fiable, consommer peu d'énergie et parfois répondre très rapidement."
+       data-en="Remember: an embedded OS is designed for a specific device or task. It often needs to be reliable, energy-efficient, and sometimes respond very quickly.">À retenir : un OS embarqué est conçu pour un appareil ou une mission précise. Il doit souvent être fiable, consommer peu d'énergie et parfois répondre très rapidement.</p>
+
+    <h2 data-fr="Tableau Comparatif" data-en="Comparison Table">Tableau Comparatif</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th data-fr="Système" data-en="System">Système</th><th data-fr="Éditeur" data-en="Developer">Éditeur</th><th data-fr="Utilisation" data-en="Usage">Utilisation</th></tr></thead>
+      <tbody>
+        <tr><td>Windows</td><td>Microsoft</td><td>PC, Laptop</td></tr>
+        <tr><td>macOS</td><td>Apple</td><td>Mac</td></tr>
+        <tr><td>Linux</td><td data-fr="Communauté" data-en="Community">Communauté</td><td data-fr="PC, Serveur" data-en="PC, Server">PC, Serveur</td></tr>
+        <tr><td>Android</td><td>Google</td><td>Smartphone</td></tr>
+        <tr><td>iOS</td><td>Apple</td><td>iPhone / iPad</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+</main>
+<footer><p data-fr="© 2026 — Projet Scolaire" data-en="© 2026 — School Project">© 2026 — Projet Scolaire</p></footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Installation des OS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="jscript.js" defer></script>
+</head>
+<body>
+<header>
+  <nav aria-label="Navigation principale">
+    <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+    <a href="types.html" data-fr="Types" data-en="Types">Types</a>
+    <a href="installation.html" data-fr="Installation" data-en="Installation">Installation</a>
+  </nav>
+  <div class="controls">
+    <button type="button" onclick="toggleLang()" id="langBtn">EN</button>
+    <label class="switch" aria-label="Activer le mode sombre"><input type="checkbox" onchange="toggleDark()"><span class="slider"></span></label>
+  </div>
+</header>
+<main>
+  <h1 data-fr="Guide d'Installation des OS" data-en="OS Installation Guide">Guide d'Installation des OS</h1>
+  <section>
+    <h3 data-fr="Installation de Windows" data-en="Installing Windows">Installation de Windows</h3>
+    <p data-fr="Prérequis : Clé USB (8 Go), image ISO de Windows, licence." data-en="Prerequisites: USB drive (8 GB), Windows ISO image, and a license.">Prérequis : Clé USB (8 Go), image ISO de Windows, licence.</p>
+    <ol>
+      <li data-fr="Télécharger Media Creation Tool depuis le site de Microsoft." data-en="Download the Media Creation Tool from Microsoft's website.">Télécharger Media Creation Tool depuis le site de Microsoft.</li>
+      <li data-fr="Créer une clé USB bootable." data-en="Create a bootable USB drive.">Créer une clé USB bootable.</li>
+      <li data-fr="Redémarrer et accéder au BIOS (F2 ou Suppr)." data-en="Restart and enter the BIOS (F2 or Delete).">Redémarrer et accéder au BIOS (F2 ou Suppr).</li>
+      <li data-fr="Booter sur la clé USB." data-en="Boot from the USB drive.">Booter sur la clé USB.</li>
+      <li data-fr="Suivre les instructions à l'écran." data-en="Follow the on-screen instructions.">Suivre les instructions à l'écran.</li>
+    </ol>
+    <a href="https://www.microsoft.com/software-download/windows11" class="btn external" target="_blank" rel="noopener noreferrer" data-fr="Télécharger Windows" data-en="Download Windows">Télécharger Windows</a>
+    <h3 data-fr="Installation de Linux (Ubuntu)" data-en="Installing Linux (Ubuntu)">Installation de Linux (Ubuntu)</h3>
+    <p data-fr="Prérequis : Clé USB (4 Go), image ISO d'Ubuntu." data-en="Prerequisites: USB drive (4 GB) and Ubuntu ISO image.">Prérequis : Clé USB (4 Go), image ISO d'Ubuntu.</p>
+    <ol>
+      <li data-fr="Télécharger l'ISO depuis ubuntu.com." data-en="Download the ISO from ubuntu.com.">Télécharger l'ISO depuis ubuntu.com.</li>
+      <li data-fr="Créer une clé USB bootable avec Rufus ou Etcher." data-en="Create a bootable USB drive with Rufus or Etcher.">Créer une clé USB bootable avec Rufus ou Etcher.</li>
+      <li data-fr="Redémarrer et booter sur la clé." data-en="Restart and boot from the USB drive.">Redémarrer et booter sur la clé.</li>
+      <li data-fr="Choisir 'Installer Ubuntu'." data-en="Choose 'Install Ubuntu'.">Choisir 'Installer Ubuntu'.</li>
+      <li data-fr="Suivre les instructions et redémarrer." data-en="Follow the instructions and restart.">Suivre les instructions et redémarrer.</li>
+    </ol>
+    <a href="https://ubuntu.com/download/desktop" class="btn external" target="_blank" rel="noopener noreferrer" data-fr="Télécharger Ubuntu" data-en="Download Ubuntu">Télécharger Ubuntu</a>
+    <h3 data-fr="Systèmes embarqués : installation et mise à jour" data-en="Embedded systems: installation and updates">Systèmes embarqués : installation et mise à jour</h3>
+    <p data-fr="Contrairement à un ordinateur classique, un OS embarqué est généralement installé par le fabricant sur l'appareil. L'utilisateur ne l'installe pas toujours lui-même."
+       data-en="Unlike a regular computer, an embedded OS is usually installed on the device by its manufacturer. The user does not always install it personally.">Contrairement à un ordinateur classique, un OS embarqué est généralement installé par le fabricant sur l'appareil. L'utilisateur ne l'installe pas toujours lui-même.</p>
+    <ol>
+      <li data-fr="Le fabricant choisit un OS adapté au matériel et à la fonction de l'appareil." data-en="The manufacturer chooses an OS suited to the device's hardware and purpose.">Le fabricant choisit un OS adapté au matériel et à la fonction de l'appareil.</li>
+      <li data-fr="Le logiciel est chargé dans une mémoire intégrée, par exemple une mémoire flash." data-en="The software is loaded into built-in memory, such as flash memory.">Le logiciel est chargé dans une mémoire intégrée, par exemple une mémoire flash.</li>
+      <li data-fr="Les mises à jour sont fournies par le fabricant, parfois par USB ou par Internet (OTA)." data-en="Updates are provided by the manufacturer, sometimes by USB or over the internet (OTA).">Les mises à jour sont fournies par le fabricant, parfois par USB ou par Internet (OTA).</li>
+      <li data-fr="Dans une voiture, il faut utiliser les procédures et outils officiels : une mauvaise mise à jour peut empêcher un équipement de fonctionner." data-en="In a car, official procedures and tools must be used: an incorrect update can stop equipment from working.">Dans une voiture, il faut utiliser les procédures et outils officiels : une mauvaise mise à jour peut empêcher un équipement de fonctionner.</li>
+    </ol>
+    <p data-fr="Exemple : l'écran multimédia d'une voiture peut recevoir une mise à jour logicielle, tandis que les calculateurs du moteur et des freins sont entretenus selon des procédures spécialisées."
+       data-en="Example: a car's infotainment screen may receive a software update, while engine and brake control units are serviced using specialized procedures.">Exemple : l'écran multimédia d'une voiture peut recevoir une mise à jour logicielle, tandis que les calculateurs du moteur et des freins sont entretenus selon des procédures spécialisées.</p>
+    <h3 data-fr="Installation de macOS" data-en="Installing macOS">Installation de macOS</h3>
+    <p data-fr="Prérequis : Mac compatible, connexion Internet, compte Apple." data-en="Prerequisites: Compatible Mac, Internet connection, and Apple account.">Prérequis : Mac compatible, connexion Internet, compte Apple.</p>
+    <ol>
+      <li data-fr="Ouvrir Préférences Système > Mise à jour." data-en="Open System Settings > Software Update.">Ouvrir Préférences Système > Mise à jour.</li>
+      <li data-fr="Télécharger la dernière version de macOS." data-en="Download the latest version of macOS.">Télécharger la dernière version de macOS.</li>
+      <li data-fr="Lancer l'installateur." data-en="Run the installer.">Lancer l'installateur.</li>
+      <li data-fr="Suivre les instructions et redémarrer." data-en="Follow the instructions and restart.">Suivre les instructions et redémarrer.</li>
+    </ol>
+    <a href="https://support.apple.com/macos" class="btn external" target="_blank" rel="noopener noreferrer" data-fr="Aide macOS" data-en="macOS Support">Aide macOS</a>
+  </section>
+</main>
+<footer><p data-fr="© 2026 — Projet Scolaire" data-en="© 2026 — School Project">© 2026 — Projet Scolaire</p></footer>
+</body>
+</html>
