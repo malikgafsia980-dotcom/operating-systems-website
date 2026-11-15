@@ -1,61 +1,193 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Systèmes d'operations</title>
+
+  <title>Systèmes d'exploitation</title>
+
   <link rel="stylesheet" href="style.css">
   <script src="jscript.js" defer></script>
 </head>
+
 <body>
+
 <header>
   <nav aria-label="Navigation principale">
     <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
     <a href="types.html" data-fr="Types" data-en="Types">Types</a>
     <a href="installation.html" data-fr="Installation" data-en="Installation">Installation</a>
   </nav>
+
   <div class="controls">
     <button type="button" onclick="toggleLang()" id="langBtn">EN</button>
+
     <label class="switch" aria-label="Activer le mode sombre">
       <input type="checkbox" onchange="toggleDark()">
       <span class="slider"></span>
     </label>
   </div>
 </header>
+
 <main>
-  <h1 data-fr="Les Systèmes d'Exploitation" data-en="Operating Systems">Les Systèmes d'operations</h1>
+  <h1 data-fr="Les Systèmes d'Exploitation"
+      data-en="Operating Systems">
+    Les Systèmes d'Exploitation
+  </h1>
+
   <section>
+
     <h2 data-fr="Introduction" data-en="Introduction">Introduction</h2>
-    <p data-fr="Un système d'operation (OS) est un logiciel qui gère le matériel et les logiciels d'un ordinateur. Il sert d'intermédiaire entre l'utilisateur et le matériel."
-       data-en="An operating system (OS) is software that manages a computer's hardware and software. It acts as an intermediary between the user and the hardware.">Un système d'exploitation (OS) est un logiciel qui gère le matériel et les logiciels d'un ordinateur. Il sert d'intermédiaire entre l'utilisateur et le matériel.</p>
+
+    <p data-fr="Un système d'exploitation (OS) est un logiciel qui gère le matériel et les logiciels d'un ordinateur. Il sert d'intermédiaire entre l'utilisateur et le matériel."
+       data-en="An operating system (OS) is software that manages a computer's hardware and software. It acts as an intermediary between the user and the hardware.">
+      Un système d'exploitation (OS) est un logiciel qui gère le matériel et les logiciels d'un ordinateur. Il sert d'intermédiaire entre l'utilisateur et le matériel.
+    </p>
+
     <p data-fr="Les plus connus sont Windows, macOS, Linux, Android et iOS."
-       data-en="The best-known operating systems include Windows, macOS, Linux, Android, and iOS.">Les plus connus sont Windows, macOS, Linux, Android et iOS.</p>
-    <h2 data-fr="Les Principaux OS" data-en="Main Operating Systems">Les Principaux OS</h2>
+       data-en="The best-known operating systems include Windows, macOS, Linux, Android, and iOS.">
+      Les plus connus sont Windows, macOS, Linux, Android et iOS.
+    </p>
+
+    <h2 data-fr="Les Principaux OS" data-en="Main Operating Systems">
+      Les Principaux OS
+    </h2>
+
     <div class="os-grid">
-      <article class="os-card"><img src="windows.svg" alt="Logo Windows"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="8" y="12" width="39" height="35" fill="#00a4ef"/><rect x="53" y="8" width="39" height="39" fill="#00a4ef"/><rect x="8" y="53" width="39" height="35" fill="#00a4ef"/><rect x="53" y="53" width="39" height="39" fill="#00a4ef"/></svg><h3>Windows</h3><p data-fr="Le plus utilisé sur PC." data-en="Widely used on PCs.">Le plus utilisé sur PC.</p></article>
-      <article class="os-card"><img src="linux.svg" alt="Mascotte Linux Tux"><h3>Linux</h3><p data-fr="Open source et gratuit." data-en="Open source and free.">Open source et gratuit.</p></article>
-      <article class="os-card"><img src="macos.svg" alt="Logo Apple"><h3>macOS</h3><p data-fr="Système d'Apple pour Mac." data-en="Apple's operating system for Mac.">Système d'Apple pour Mac.</p></article>
-      <article class="os-card"><img src="android.svg" alt="Logo Android"><h3>Android</h3><p data-fr="Plateforme mobile open source de Google, bâtie sur un noyau Linux modifié." data-en="Google's open-source mobile platform built on a modified Linux kernel.">Plateforme mobile open source de Google, bâtie sur un noyau Linux modifié.</p></article>
+
+      <article class="os-card">
+        <img src="windows.svg" alt="Logo Windows">
+        <h3>Windows</h3>
+        <p data-fr="Le plus utilisé sur PC."
+           data-en="Widely used on PCs.">
+          Le plus utilisé sur PC.
+        </p>
+      </article>
+
+      <article class="os-card">
+        <img src="linux.svg" alt="Mascotte Linux Tux">
+        <h3>Linux</h3>
+        <p data-fr="Open source et gratuit."
+           data-en="Open source and free.">
+          Open source et gratuit.
+        </p>
+      </article>
+
+      <article class="os-card">
+        <img src="macos.svg" alt="Logo Apple">
+        <h3>macOS</h3>
+        <p data-fr="Système d'Apple pour Mac."
+           data-en="Apple's operating system for Mac.">
+          Système d'Apple pour Mac.
+        </p>
+      </article>
+
+      <article class="os-card">
+        <img src="android.svg" alt="Logo Android">
+        <h3>Android</h3>
+        <p data-fr="Plateforme mobile open source de Google, bâtie sur un noyau Linux modifié."
+           data-en="Google's open-source mobile platform built on a modified Linux kernel.">
+          Plateforme mobile open source de Google, bâtie sur un noyau Linux modifié.
+        </p>
+      </article>
+
     </div>
-    <h2 data-fr="Les OS Embarqués" data-en="Embedded Operating Systems">Les OS Embarqués</h2>
+
+    <h2 data-fr="Les OS Embarqués"
+        data-en="Embedded Operating Systems">
+      Les OS Embarqués
+    </h2>
+
     <p data-fr="Un OS embarqué est intégré dans un appareil pour gérer des fonctions précises. On en trouve dans les voitures, les appareils ménagers, les objets connectés et les machines industrielles."
-       data-en="An embedded OS is built into a device to manage specific functions. It can be found in cars, home appliances, connected devices, and industrial machines.">Un OS embarqué est intégré dans un appareil pour gérer des fonctions précises. On en trouve dans les voitures, les appareils ménagers, les objets connectés et les machines industrielles.</p>
+       data-en="An embedded OS is built into a device to manage specific functions. It can be found in cars, home appliances, connected devices, and industrial machines.">
+      Un OS embarqué est intégré dans un appareil pour gérer des fonctions précises. On en trouve dans les voitures, les appareils ménagers, les objets connectés et les machines industrielles.
+    </p>
+
     <div class="os-grid">
-      <article class="os-card"><img src="car-ecu.svg" alt="car-ecu" viewBox="0 0 120 100"><rect x="20" y="20" width="80" height="60" rx="8" fill="#536878"/><rect x="29" y="29" width="62" height="42" rx="4" fill="#b9d7e8"/><path d="M40 40h40M40 50h40M40 60h25" stroke="#247db5" stroke-width="4" stroke-linecap="round"/><path d="M10 35h10M10 50h10M10 65h10M100 35h10M100 50h10M100 65h10" stroke="#e0a12b" stroke-width="4"/></svg><h3 data-fr="Voitures" data-en="Cars">Voitures</h3><p data-fr="Moteur, ABS et airbags." data-en="Engine, ABS, and airbags.">Moteur, ABS et airbags.</p></article>
-      <article class="os-card"><img src="smart-home.svg" alt="Appareil connecté" viewBox="0 0 120 100" <rect x="20" y="20" width="80" height="60" rx="8" fill="#536878"/><rect x="29" y="29" width="62" height="42" rx="4" fill="#b9d7e8"/><path d="M40 40h40M40 50h40M40 60h25" stroke="#247db5" stroke-width="4" stroke-linecap="round"/><path d="M10 35h10M10 50h10M10 65h10M100 35h10M100 50h10M100 65h10" stroke="#e0a12b" stroke-width="4"/></svg><><h3 data-fr="Maison connectée" data-en="Smart home">Maison connectée</h3><p data-fr="Téléviseurs, montres et électroménager." data-en="TVs, watches, and appliances.">Téléviseurs, montres et électroménager.</p></article>
-      <article class="os-card"><img src="robot.svg" alt="Bras robotisé industriel" viewBox="0 0 120 100" <rect x="20" y="20" width="80" height="60" rx="8" fill="#536878"/><rect x="29" y="29" width="62" height="42" rx="4" fill="#b9d7e8"/><path d="M40 40h40M40 50h40M40 60h25" stroke="#247db5" stroke-width="4" stroke-linecap="round"/><path d="M10 35h10M10 50h10M10 65h10M100 35h10M100 50h10M100 65h10" stroke="#e0a12b" stroke-width="4"/></svg><><h3 data-fr="Industrie" data-en="Industry">Industrie</h3><p data-fr="Robots, capteurs et machines." data-en="Robots, sensors, and machines.">Robots, capteurs et machines.</p></article>
+
+      <article class="os-card">
+        <img src="car-ecu.svg" alt="Système électronique d'une voiture">
+        <h3 data-fr="Voitures" data-en="Cars">Voitures</h3>
+        <p data-fr="Moteur, ABS et airbags."
+           data-en="Engine, ABS, and airbags.">
+          Moteur, ABS et airbags.
+        </p>
+      </article>
+
+      <article class="os-card">
+        <img src="smart-home.svg" alt="Appareil connecté">
+        <h3 data-fr="Maison connectée" data-en="Smart home">
+          Maison connectée
+        </h3>
+        <p data-fr="Téléviseurs, montres et électroménager."
+           data-en="TVs, watches, and appliances.">
+          Téléviseurs, montres et électroménager.
+        </p>
+      </article>
+
+      <article class="os-card">
+        <img src="robot.svg" alt="Bras robotisé industriel">
+        <h3 data-fr="Industrie" data-en="Industry">Industrie</h3>
+        <p data-fr="Robots, capteurs et machines."
+           data-en="Robots, sensors, and machines.">
+          Robots, capteurs et machines.
+        </p>
+      </article>
+
     </div>
-    <h2 data-fr="Utilisation par Appareil" data-en="Usage by Device">Utilisation par Appareil</h2>
-    <div class="device-box"><strong data-fr="PC / Laptop" data-en="PC / Laptop">PC / Laptop</strong><p>Windows, macOS, Linux</p></div>
-    <div class="device-box"><strong data-fr="Smartphone" data-en="Smartphone">Smartphone</strong><p>Android, iOS</p></div>
-    <div class="device-box"><strong data-fr="Serveur" data-en="Server">Serveur</strong><p>Linux Server, Windows Server</p></div>
-    <h2 data-fr="Pourquoi Installer un OS ?" data-en="Why Install an OS?">Pourquoi Installer un OS ?</h2>
+
+    <h2 data-fr="Utilisation par Appareil"
+        data-en="Usage by Device">
+      Utilisation par Appareil
+    </h2>
+
+    <div class="device-box">
+      <strong data-fr="PC / Laptop" data-en="PC / Laptop">PC / Laptop</strong>
+      <p>Windows, macOS, Linux</p>
+    </div>
+
+    <div class="device-box">
+      <strong data-fr="Smartphone" data-en="Smartphone">Smartphone</strong>
+      <p>Android, iOS</p>
+    </div>
+
+    <div class="device-box">
+      <strong data-fr="Serveur" data-en="Server">Serveur</strong>
+      <p>Linux Server, Windows Server</p>
+    </div>
+
+    <h2 data-fr="Pourquoi Installer un OS ?"
+        data-en="Why Install an OS?">
+      Pourquoi Installer un OS ?
+    </h2>
+
     <p data-fr="L'installation d'un OS est nécessaire pour utiliser un ordinateur et configurer l'environnement de travail."
-       data-en="An operating system is needed to use a computer and configure its working environment.">L'installation d'un OS est nécessaire pour utiliser un ordinateur et configurer l'environnement de travail.</p>
-    <a href="installation.html" class="btn" data-fr="Guide d'Installation" data-en="Installation Guide">Guide d'Installation</a>
-    <a href="types.html" class="btn" data-fr="Voir les Types" data-en="See Types">Voir les Types</a>
+       data-en="An operating system is needed to use a computer and configure its working environment.">
+      L'installation d'un OS est nécessaire pour utiliser un ordinateur et configurer l'environnement de travail.
+    </p>
+
+    <a href="installation.html" class="btn"
+       data-fr="Guide d'Installation"
+       data-en="Installation Guide">
+      Guide d'Installation
+    </a>
+
+    <a href="types.html" class="btn"
+       data-fr="Voir les Types"
+       data-en="See Types">
+      Voir les Types
+    </a>
+
   </section>
 </main>
-<footer><p data-fr="© 2026 — Projet Scolaire" data-en="© 2026 — School Project">© 2026 — Projet Scolaire</p></footer>
+
+<footer>
+  <p data-fr="© 2026 — Projet Scolaire"
+     data-en="© 2026 — School Project">
+    © 2026 — Projet Scolaire
+  </p>
+</footer>
+
 </body>
 </html>
